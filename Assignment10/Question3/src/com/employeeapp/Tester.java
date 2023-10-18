@@ -58,6 +58,7 @@ public class Tester {
 			case 5:{System.out.println("Enter emp id to be modified: ");
 			       int id = sc.nextInt();
 			       Employee key = new Employee();
+			       key.setEmpid(id);
 			       int index = list.indexOf(key);
 			       if(index == -1)
 			       System.out.println("Employee not found.");
