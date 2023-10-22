@@ -8,10 +8,13 @@ public class User {
 	String last_name;
 	String email;
 	String password;
-	Date dob;
+	String dob;
 	boolean status;
 	String role;
-	public User(int id, String first_name, String last_name, String email, String password, Date dob2, boolean status,
+	public User() {
+		
+	}
+	public User(int id, String first_name, String last_name, String email, String password, String dob2, boolean status,
 			String role) {
 		this.id = id;
 		this.first_name = first_name;
@@ -55,10 +58,10 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public Date getDob() {
+	public String getDob() {
 		return dob;
 	}
-	public void setDob(Date dob) {
+	public void setDob(String dob) {
 		this.dob = dob;
 	}
 	public boolean isStatus() {
